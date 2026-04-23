@@ -1,3 +1,14 @@
+/**
+
+        * File: Lesson 4.1 - whileLoops
+
+        * Author: Alexander
+
+        * Date Created: Apr 8, 2026
+
+        * Date Last Modified: Apr 23, 2026
+
+        */
 public class PracticeProblem {
 
 	public static void main(String args[]) {
@@ -24,4 +35,23 @@ public class PracticeProblem {
 		//Write question 5 code here
 	}
 
+	public static String seriesInclusive(int num){
+		int counter =0;
+		String nums = "";
+		while (counter < num){
+			nums = nums + (counter + 1 + " ");
+			counter++;
+		}
+		return nums.trim();
+	}
+
+	public static String seriesExclusive(int num){
+		int counter = (-1);
+		String nums = "";
+		while (counter < num - 1){
+			nums = nums + (counter + 1 + " ");
+			counter++;
+		}
+		return nums.trim();
+	}
 }
